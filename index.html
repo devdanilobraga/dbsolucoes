@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Danilo Braga | Tecnologia para Logística e Transporte</title>
-<meta name="description" content="Desenvolvimento de sistemas, dashboards, automações e integrações sob medida para transportadoras e operações logísticas. Chega de planilha e sistema engessado.">
+<title>Danilo Braga | Tecnologia, Dados e Soluções Digitais</title>
+<meta name="description" content="Consultoria, sistemas personalizados, dashboards e automações para transformar processos e dados em soluções digitais. Do diagnóstico à implantação.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Danilo Braga">
+<!-- TROQUE "https://SEU-DOMINIO-AQUI.com.br" pela URL real assim que comprar o domínio -->
+<link rel="canonical" href="https://SEU-DOMINIO-AQUI.com.br/">
+<meta property="og:title" content="Danilo Braga | Tecnologia, Dados e Soluções Digitais">
+<meta property="og:description" content="Analiso processos, organizo dados e desenvolvo sistemas, dashboards e automações sob medida para cada negócio.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Danilo Braga">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://SEU-DOMINIO-AQUI.com.br/">
+<meta property="og:image" content="https://SEU-DOMINIO-AQUI.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Danilo Braga — Tecnologia, Dados e Processos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Danilo Braga | Tecnologia, Dados e Soluções Digitais">
+<meta name="twitter:description" content="Analiso processos, organizo dados e desenvolvo sistemas, dashboards e automações sob medida para cada negócio.">
+<meta name="twitter:image" content="https://SEU-DOMINIO-AQUI.com.br/og-image.png">
+<meta name="theme-color" content="#F3F6FC">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Danilo Braga",
+  "description": "Consultoria, sistemas personalizados, dashboards, automações e integrações para transformar processos e dados em soluções digitais.",
+  "url": "https://SEU-DOMINIO-AQUI.com.br/",
+  "telephone": "+5521971536909",
+  "areaServed": "BR",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Danilo Braga",
+    "jobTitle": "Desenvolvedor full-stack e consultor de processos"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultoria e análise de processos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas personalizados" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dashboards e indicadores" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação de processos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Integrações e APIs" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Implantação e evolução de sistemas" } }
+  ]
+}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236FA8FF'/%3E%3Cstop offset='1' stop-color='%231c5ce6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='44' height='44' rx='12' fill='%23050911'/%3E%3Crect x='3' y='3' width='38' height='38' rx='10' fill='url(%23g)'/%3E%3Cpath d='M11 30 L33 14' stroke='white' stroke-width='4' stroke-linecap='round' opacity='.9'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +92,6 @@
   --ff-mono:'JetBrains Mono',monospace;
   --ease:cubic-bezier(.16,.8,.32,1);
 }
-
 [data-theme="light"]{
   --void:#F3F6FC;
   --panel:#FFFFFF;
@@ -67,62 +116,45 @@
   --hero-glow-1:rgba(47,111,239,.14);
   --hero-glow-2:rgba(30,86,214,.08);
 }
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  background:var(--void);
-  color:var(--ink);
-  font-family:var(--ff-body);
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-  transition:background-color .35s ease,color .35s ease;
+  background:var(--void);color:var(--ink);font-family:var(--ff-body);line-height:1.55;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background-color .35s ease,color .35s ease;
 }
+body.locked{overflow:hidden;height:100vh}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
 button{font:inherit;cursor:pointer;background:none;border:none;color:inherit}
 :focus-visible{outline:2px solid var(--blue-light);outline-offset:3px;border-radius:4px}
 ::selection{background:var(--blue);color:#fff}
-
-.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
 @media(max-width:640px){.wrap{padding:0 20px}}
-
-h1,h2,h3,h4{font-family:var(--ff-display);font-weight:700;letter-spacing:-.01em;line-height:1.08}
+h1,h2,h3,h4{font-family:var(--ff-display);font-weight:700;letter-spacing:-.01em;line-height:1.1}
 .eyebrow{
-  font-family:var(--ff-mono);
-  font-size:12.5px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--blue-light);
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin-bottom:16px;
+  font-family:var(--ff-mono);font-size:12.5px;letter-spacing:.1em;color:var(--blue-light);
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;
 }
 .eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--blue-light);box-shadow:0 0 0 4px var(--blue-glow)}
-
 .section{padding:120px 0}
 @media(max-width:900px){.section{padding:88px 0}}
-@media(max-width:560px){.section{padding:68px 0}}
-
-.section-head{max-width:640px;margin-bottom:60px}
-.section-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:16px}
+@media(max-width:560px){.section{padding:64px 0}}
+.section-head{max-width:640px;margin-bottom:56px}
+.section-head h2{font-size:clamp(28px,4vw,40px);margin-bottom:16px}
 .section-head p{color:var(--ink-dim);font-size:17px}
 .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
 
-/* ===================== REVEAL ===================== */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.in{opacity:1;transform:translateY(0)}
-.reveal-stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal-stagger > *{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal-stagger.in > *{opacity:1;transform:translateY(0)}
 .reveal-stagger.in > *:nth-child(1){transition-delay:.03s}
-.reveal-stagger.in > *:nth-child(2){transition-delay:.10s}
-.reveal-stagger.in > *:nth-child(3){transition-delay:.17s}
-.reveal-stagger.in > *:nth-child(4){transition-delay:.24s}
-.reveal-stagger.in > *:nth-child(5){transition-delay:.31s}
-.reveal-stagger.in > *:nth-child(6){transition-delay:.38s}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.09s}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.15s}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.21s}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.27s}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.33s}
 
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -130,36 +162,19 @@ h1,h2,h3,h4{font-family:var(--ff-display);font-weight:700;letter-spacing:-.01em;
   *{animation-duration:.001s!important;animation-iteration-count:1!important}
 }
 
-/* ===================== BUTTONS ===================== */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   padding:15px 26px;border-radius:100px;font-weight:600;font-size:15px;
-  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;
-  white-space:nowrap;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;white-space:nowrap;
 }
-.btn-primary{
-  background:linear-gradient(135deg,var(--blue),#1c5ce6);
-  color:#fff;
-  box-shadow:0 8px 24px -6px var(--blue-glow);
-}
+.btn-primary{background:linear-gradient(135deg,var(--blue),#1c5ce6);color:#fff;box-shadow:0 8px 24px -6px var(--blue-glow)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px -6px var(--blue-glow)}
-.btn-ghost{
-  background:rgba(127,144,176,.08);
-  border:1px solid var(--line);
-  color:var(--ink);
-}
+.btn-ghost{background:rgba(127,144,176,.08);border:1px solid var(--line);color:var(--ink)}
 .btn-ghost:hover{background:rgba(127,144,176,.14);transform:translateY(-2px)}
 .btn svg{width:18px;height:18px;flex:none}
 
-/* ===================== TOP UTILITY BAR ===================== */
-.topbar{
-  background:var(--panel);
-  border-bottom:1px solid var(--line);
-  font-family:var(--ff-mono);
-  font-size:12px;
-  position:relative;
-  z-index:101;
-}
+/* ===================== TOPBAR ===================== */
+.topbar{background:var(--panel);border-bottom:1px solid var(--line);font-family:var(--ff-mono);font-size:12px;position:relative;z-index:101}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:38px}
 .topbar-left{display:flex;align-items:center;gap:18px;color:var(--ink-dim)}
 .topbar-left a{display:flex;align-items:center;gap:6px;transition:color .2s}
@@ -169,329 +184,260 @@ h1,h2,h3,h4{font-family:var(--ff-display);font-weight:700;letter-spacing:-.01em;
 @media(max-width:760px){.topbar-right{display:none}}
 @media(max-width:480px){.topbar-left span.tb-sep{display:none}.topbar-left a span.tb-full{display:none}}
 
-/* ===================== LOGO LOCKUP ===================== */
+/* ===================== BRAND ===================== */
 .brand{display:flex;align-items:center;gap:12px}
 .logo-mark{width:42px;height:42px;flex:none;border-radius:12px;overflow:visible}
 .brand-word{font-family:var(--ff-display);line-height:1;display:flex;flex-direction:column}
-.brand-word .l1{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:.01em}
-.brand-word .l2{font-size:15px;font-weight:700;color:var(--blue-light);letter-spacing:.01em;margin-top:2px}
-.brand-word .l3{font-size:9.5px;font-family:var(--ff-mono);color:var(--ink-faint);letter-spacing:.14em;margin-top:5px}
+.brand-word .l1{font-size:15px;font-weight:700;color:var(--ink);letter-spacing:.01em}
+.brand-word .l3{font-size:9px;font-family:var(--ff-mono);color:var(--ink-faint);letter-spacing:.12em;margin-top:5px}
 
 /* ===================== NAV ===================== */
-.nav{
-  position:sticky;top:0;left:0;right:0;z-index:100;
-  padding:18px 0;
-  transition:background .3s,padding .3s,border-color .3s,backdrop-filter .3s;
-  border-bottom:1px solid transparent;
-}
-.nav.scrolled{
-  background:var(--nav-bg-scroll);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
-  padding:12px 0;
-  border-bottom:1px solid var(--line);
-}
+.nav{position:sticky;top:0;left:0;right:0;z-index:100;padding:18px 0;transition:background .3s,padding .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+.nav.scrolled{background:var(--nav-bg-scroll);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:12px 0;border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.nav-links{display:flex;align-items:center;gap:34px}
-.nav-links a{font-size:14.5px;font-weight:500;color:var(--ink-dim);transition:color .2s;position:relative}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--ink-dim);transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
 .nav-right{display:flex;align-items:center;gap:14px}
 .nav-right .btn{padding:11px 20px;font-size:14px}
-
-.theme-toggle{
-  width:40px;height:40px;border-radius:10px;
-  border:1px solid var(--line);background:rgba(127,144,176,.06);
-  display:flex;align-items:center;justify-content:center;color:var(--ink-dim);
-  transition:background .2s,color .2s,transform .3s var(--ease);
-  flex:none;
-}
+.theme-toggle{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:rgba(127,144,176,.06);display:flex;align-items:center;justify-content:center;color:var(--ink-dim);transition:background .2s,color .2s;flex:none}
 .theme-toggle:hover{background:rgba(127,144,176,.14);color:var(--ink)}
 .theme-toggle svg{width:19px;height:19px}
 .theme-toggle .icon-moon{display:none}
 [data-theme="light"] .theme-toggle .icon-sun{display:none}
 [data-theme="light"] .theme-toggle .icon-moon{display:block}
-
 .burger{display:none;width:40px;height:40px;align-items:center;justify-content:center;border-radius:8px;flex:none}
-.burger span,.burger span::before,.burger span::after{
-  content:'';display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .25s,opacity .25s;
-}
+.burger span,.burger span::before,.burger span::after{content:'';display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .25s,opacity .25s}
 .burger span::before{position:absolute;top:-6px}
 .burger span::after{position:absolute;top:6px}
 .burger.open span{background:transparent}
 .burger.open span::before{transform:rotate(45deg);top:0}
 .burger.open span::after{transform:rotate(-45deg);top:0}
-
 @media(max-width:900px){
-  .nav-links{
-    position:fixed;top:0;right:0;height:100vh;width:min(78vw,340px);
-    background:var(--panel);border-left:1px solid var(--line);
-    flex-direction:column;justify-content:center;align-items:flex-start;
-    gap:28px;padding:40px;
-    transform:translateX(100%);transition:transform .4s var(--ease);
-    z-index:120;
-  }
+  .nav-links{position:fixed;top:0;right:0;height:100vh;width:min(78vw,340px);background:var(--panel);border-left:1px solid var(--line);flex-direction:column;justify-content:center;align-items:flex-start;gap:26px;padding:40px;transform:translateX(100%);transition:transform .4s var(--ease);z-index:120}
   .nav-links.open{transform:translateX(0)}
   .nav-links a{font-size:19px}
   .nav-right .btn-primary{display:none}
   .burger{display:flex}
 }
 
-/* ===================== HERO ===================== */
-.hero{
-  position:relative;
-  padding:88px 0 100px;
-  overflow:hidden;
+/* ===================== INTRO CINEMATOGRÁFICA ===================== */
+.intro{
+  position:fixed;inset:0;z-index:9999;background:#03060c;
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  transition:opacity .7s ease,visibility .7s ease;
 }
+.intro.hide{opacity:0;visibility:hidden;pointer-events:none}
+.intro-canvas{position:absolute;inset:0;overflow:hidden}
+.intro-particle{position:absolute;border-radius:50%;background:radial-gradient(circle,#6FA8FF,transparent 70%);opacity:0;animation:introParticle 3.2s ease-in forwards}
+@keyframes introParticle{
+  0%{opacity:0;transform:translateY(20px) scale(.4)}
+  15%{opacity:.9}
+  100%{opacity:0;transform:translateY(-140px) scale(1.1)}
+}
+.intro-glow{position:absolute;inset:-20%;background:radial-gradient(45% 40% at 50% 55%,rgba(47,123,255,.24),transparent 70%);animation:introGlow 5s ease-in-out infinite}
+@keyframes introGlow{0%,100%{opacity:.6}50%{opacity:1}}
+.intro-content{position:relative;text-align:center;z-index:2}
+.intro-mark{width:64px;height:64px;margin:0 auto 26px;opacity:0;transform:scale(.7);animation:introMarkIn .9s var(--ease) .3s forwards}
+@keyframes introMarkIn{to{opacity:1;transform:scale(1)}}
+.intro-name{
+  font-family:var(--ff-display);font-weight:700;font-size:clamp(30px,6vw,52px);color:#EEF2F8;
+  letter-spacing:.02em;opacity:0;transform:translateY(14px);animation:introTextIn .8s var(--ease) 1s forwards;
+}
+.intro-tag{
+  margin-top:14px;font-family:var(--ff-mono);font-size:13px;letter-spacing:.28em;color:#6FA8FF;
+  text-transform:uppercase;opacity:0;transform:translateY(10px);animation:introTextIn .8s var(--ease) 1.7s forwards;
+}
+@keyframes introTextIn{to{opacity:1;transform:translateY(0)}}
+.intro-skip{
+  position:absolute;bottom:38px;right:38px;z-index:3;
+  font-family:var(--ff-mono);font-size:12px;color:rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.18);padding:9px 16px;border-radius:100px;
+  transition:color .2s,border-color .2s;
+}
+.intro-skip:hover{color:#fff;border-color:rgba(255,255,255,.4)}
+@media(max-width:560px){.intro-skip{bottom:24px;right:24px}}
+@media(prefers-reduced-motion:reduce){
+  .intro{display:none}
+}
+
+/* ===================== HERO ===================== */
+.hero{position:relative;padding:84px 0 100px;overflow:hidden}
 .hero::before{
   content:'';position:absolute;inset:-20% -10% auto -10%;height:900px;
-  background:radial-gradient(60% 60% at 30% 20%,var(--hero-glow-1),transparent 70%),
-             radial-gradient(45% 45% at 85% 10%,var(--hero-glow-2),transparent 70%);
+  background:radial-gradient(60% 60% at 30% 20%,var(--hero-glow-1),transparent 70%),radial-gradient(45% 45% at 85% 10%,var(--hero-glow-2),transparent 70%);
   pointer-events:none;
 }
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
-  background-size:64px 64px;
-  mask-image:radial-gradient(ellipse 70% 55% at 50% 20%,black 40%,transparent 100%);
-  pointer-events:none;
-}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 55% at 50% 20%,black 40%,transparent 100%);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-@media(max-width:980px){.hero .wrap{grid-template-columns:1fr;gap:64px}}
-.hero h1{font-size:clamp(34px,5vw,58px);margin-bottom:22px}
-.hero h1 em{font-style:normal;color:var(--blue-light);background:linear-gradient(90deg,var(--blue-light),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media(max-width:980px){.hero .wrap{grid-template-columns:1fr;gap:60px}}
+.hero-kicker{font-family:var(--ff-display);font-size:clamp(16px,1.8vw,19px);color:var(--ink-dim);font-weight:600;margin-bottom:10px}
+.hero h1{font-size:clamp(32px,4.6vw,52px);margin-bottom:22px}
 .hero p.lead{font-size:18px;color:var(--ink-dim);max-width:520px;margin-bottom:36px}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
 .hero-trust{display:flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:12.5px;color:var(--ink-faint);flex-wrap:wrap}
 .hero-trust b{color:var(--ink-dim);font-weight:500}
 .dot-sep{width:3px;height:3px;border-radius:50%;background:var(--ink-faint)}
 
-/* --- Dashboard mockup (signature element) --- */
-.dash{
-  position:relative;
-  background:linear-gradient(180deg,var(--panel),var(--panel-3));
-  border:1px solid var(--line);
-  border-radius:var(--radius-lg);
-  box-shadow:0 30px 80px -30px var(--shadow-2),0 0 0 1px rgba(255,255,255,.02) inset;
-  overflow:hidden;
-}
-.dash-top{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:16px 20px;border-bottom:1px solid var(--line);
-  background:rgba(127,144,176,.03);
-}
-.dash-top-left{display:flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:11.5px;letter-spacing:.08em;color:var(--ink-dim);text-transform:uppercase}
-.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);position:relative}
+.tpanel{position:relative;background:linear-gradient(180deg,var(--panel),var(--panel-3));border:1px solid var(--line);border-radius:var(--radius-lg);box-shadow:0 30px 80px -30px var(--shadow-2),0 0 0 1px rgba(255,255,255,.02) inset;overflow:hidden}
+.tpanel-top{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line);background:rgba(127,144,176,.03)}
+.tpanel-top-left{display:flex;align-items:center;gap:10px;font-family:var(--ff-mono);font-size:11.5px;letter-spacing:.05em;color:var(--ink-dim)}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);position:relative;flex:none}
 .live-dot::after{content:'';position:absolute;inset:-5px;border-radius:50%;background:var(--green);opacity:.35;animation:pulse 1.8s infinite}
 @keyframes pulse{0%{transform:scale(.6);opacity:.5}70%{transform:scale(1.9);opacity:0}100%{opacity:0}}
-.dash-top-dots{display:flex;gap:6px}
-.dash-top-dots span{width:8px;height:8px;border-radius:50%;background:var(--line)}
-.dash-body{padding:20px}
-.dash-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
-.metric-chip{
-  background:rgba(127,144,176,.05);border:1px solid var(--line);border-radius:10px;
-  padding:12px 12px;
-}
-.metric-chip .num{font-family:var(--ff-mono);font-weight:600;font-size:20px;color:var(--ink)}
-.metric-chip .lbl{font-size:10.5px;color:var(--ink-faint);margin-top:2px;line-height:1.3}
-.metric-chip .num.up{color:var(--green)}
+.tpanel-top-dots{display:flex;gap:6px}
+.tpanel-top-dots span{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.tpanel-body{padding:22px 22px 26px}
 
-.dash-chart{
-  background:rgba(127,144,176,.04);border:1px solid var(--line);border-radius:10px;
-  padding:16px 16px 12px;margin-bottom:14px;
-}
-.dash-chart-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.dash-chart-head span{font-size:11px;color:var(--ink-faint);font-family:var(--ff-mono);text-transform:uppercase;letter-spacing:.08em}
-.bars{display:flex;align-items:flex-end;gap:7px;height:64px}
-.bars i{
-  flex:1;border-radius:4px 4px 0 0;
-  background:linear-gradient(180deg,var(--blue-light),var(--blue));
-  transform:scaleY(0);transform-origin:bottom;
-  transition:transform 1s var(--ease);
-  opacity:.9;
-}
-.bars i:last-child{background:linear-gradient(180deg,var(--green),#1fae86)}
-.dash.play .bars i{transform:scaleY(var(--h))}
+.sheet-mock{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:rgba(127,144,176,.03)}
+.sheet-head{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line);font-family:var(--ff-mono);font-size:10.5px;color:var(--ink-faint)}
+.sheet-head svg{width:12px;height:12px;flex:none}
+.sheet-table{width:100%;border-collapse:collapse;font-size:12px}
+.sheet-table th{text-align:left;font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.04em;color:var(--ink-faint);padding:7px 12px;border-bottom:1px solid var(--line);background:rgba(127,144,176,.04);font-weight:500}
+.sheet-table td{padding:7px 12px;border-bottom:1px solid var(--line-soft);color:var(--ink-dim)}
+.sheet-table tr:last-child td{border-bottom:none}
+.sheet-tag{display:inline-flex;padding:2px 9px;border-radius:100px;font-size:10px;font-weight:600}
+.sheet-tag.ok{background:var(--green-dim);color:var(--green)}
+.sheet-tag.pending{background:var(--amber-dim);color:var(--amber)}
+.sheet-pivot{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;background:rgba(127,144,176,.05);font-family:var(--ff-mono);font-size:10.5px;color:var(--ink-faint);border-top:1px solid var(--line)}
+.sheet-pivot b{color:var(--ink);font-weight:600}
 
-.dash-map{
-  background:rgba(127,144,176,.04);border:1px solid var(--line);border-radius:10px;
-  padding:12px;
-}
-.dash-map svg{width:100%;height:auto;display:block}
-.route-path{stroke-dasharray:6 7;opacity:.55}
-.route-node{fill:var(--panel);stroke:var(--blue-light);stroke-width:2}
+.tarrow{display:flex;align-items:center;justify-content:center;gap:8px;padding:16px 0;color:var(--ink-faint);font-family:var(--ff-mono);font-size:11.5px}
+.tarrow svg{width:16px;height:16px;color:var(--blue-light);animation:arrowBounce 1.8s ease-in-out infinite;flex:none}
+@keyframes arrowBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 
-.badge-float{
-  position:absolute;background:var(--panel);border:1px solid var(--line);
-  border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:9px;
-  box-shadow:0 16px 34px -14px var(--shadow-2);
-  font-size:12.5px;font-weight:600;
-  animation:float 5s ease-in-out infinite;
-}
+.board-mock{border:1px solid var(--line);border-radius:10px;background:rgba(127,144,176,.03);padding:16px}
+.board-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.board-kpi{text-align:center;padding:10px 6px;border-radius:8px;background:rgba(127,144,176,.05);border:1px solid var(--line)}
+.board-kpi .n{font-family:var(--ff-mono);font-weight:600;font-size:19px;color:var(--ink)}
+.board-kpi .l{font-size:9.5px;color:var(--ink-faint);margin-top:3px}
+.board-charts{display:grid;grid-template-columns:.75fr 1.25fr;gap:16px;align-items:center}
+.board-donut{display:flex;align-items:center;justify-content:center}
+.donut-ring{transition:stroke-dashoffset 1.3s var(--ease)}
+.board-bars{display:flex;align-items:flex-end;gap:6px;height:56px}
+.board-bars i{flex:1;border-radius:3px 3px 0 0;background:linear-gradient(180deg,var(--blue-light),var(--blue));transform:scaleY(0);transform-origin:bottom;transition:transform 1s var(--ease);opacity:.9}
+.board-bars i:last-child{background:linear-gradient(180deg,var(--green),#1fae86)}
+.tpanel.play .board-bars i{transform:scaleY(var(--h))}
+.tpanel.play .donut-ring{stroke-dashoffset:var(--offset)}
+
+.badge-float{position:absolute;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:9px;box-shadow:0 16px 34px -14px var(--shadow-2);font-size:12.5px;font-weight:600;animation:float 5s ease-in-out infinite}
 .badge-float svg{width:16px;height:16px;color:var(--green);flex:none}
-.badge-1{top:-18px;right:-10px;animation-delay:.2s}
-.badge-2{bottom:14px;left:-26px;animation-delay:1.1s}
+.badge-1{top:-16px;right:6px;animation-delay:.2s}
+.badge-2{bottom:-16px;left:6px;animation-delay:1.1s}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 @media(max-width:560px){.badge-float{display:none}}
 
-/* ===================== PAINS ===================== */
-.pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-@media(max-width:760px){.pain-grid{grid-template-columns:1fr}}
-.pain-card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 26px 24px;position:relative;overflow:hidden;
-  transition:border-color .3s,transform .3s;
-}
+/* ===================== PROBLEMAS ===================== */
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.pain-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.pain-grid{grid-template-columns:1fr}}
+.pain-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 22px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
 .pain-card:hover{border-color:rgba(255,176,32,.4);transform:translateY(-3px)}
 .pain-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--amber);opacity:.7}
-.pain-tag{
-  font-family:var(--ff-mono);font-size:11px;color:var(--amber);
-  background:var(--amber-dim);display:inline-block;padding:3px 9px;border-radius:5px;
-  letter-spacing:.06em;margin-bottom:14px;
-}
-.pain-card h3{font-size:19px;margin-bottom:9px;font-weight:600}
-.pain-card p{color:var(--ink-dim);font-size:15px}
+.pain-tag{display:inline-block;font-family:var(--ff-mono);font-size:10px;letter-spacing:.09em;color:var(--amber);background:var(--amber-dim);border-radius:5px;padding:3px 8px;margin-bottom:12px;font-weight:600}
+.pain-card p{font-size:15.5px;color:var(--ink)}
+.pain-close{margin-top:44px;text-align:center;font-family:var(--ff-display);font-weight:600;font-size:22px;color:var(--blue-light)}
 
-/* ===================== SOLUTIONS ===================== */
+/* ===================== SERVIÇOS ===================== */
 .sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:940px){.sol-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.sol-grid{grid-template-columns:1fr}}
-.sol-card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-3));
-  border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px 24px;transition:transform .3s,border-color .3s,background .3s;
-}
+.sol-card{background:linear-gradient(180deg,var(--panel),var(--panel-3));border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;transition:transform .3s,border-color .3s}
 .sol-card:hover{transform:translateY(-4px);border-color:rgba(111,168,255,.45)}
-.sol-icon{
-  width:46px;height:46px;border-radius:11px;
-  background:rgba(47,123,255,.12);border:1px solid rgba(111,168,255,.25);
-  display:flex;align-items:center;justify-content:center;margin-bottom:18px;
-}
+.sol-icon{width:46px;height:46px;border-radius:11px;background:rgba(47,123,255,.12);border:1px solid rgba(111,168,255,.25);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .sol-icon svg{width:22px;height:22px;color:var(--blue-light)}
 .sol-card h3{font-size:18px;margin-bottom:8px;font-weight:600}
 .sol-card p{color:var(--ink-dim);font-size:14.5px}
-.sol-tag{font-family:var(--ff-mono);font-size:10.5px;color:var(--ink-faint);letter-spacing:.08em;margin-top:14px;display:block}
 
-/* ===================== BENTO PHOTO SECTION ===================== */
-.bento-row1{margin-bottom:14px}
-.bento-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-.bento-row3{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media(max-width:820px){.bento-row2{grid-template-columns:1fr}.bento-row3{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.bento-row3{grid-template-columns:1fr}}
-
-.tile{
-  position:relative;border-radius:var(--radius-lg);overflow:hidden;
-  height:clamp(260px,32vw,380px);
-  background-color:var(--panel-3);
-  background-image:linear-gradient(155deg,rgba(47,123,255,.30),rgba(5,9,17,.05));
-  background-size:cover;background-position:center;
-  border:1px solid var(--line);
-}
-.bento-row2 .tile{height:280px}
-.tile.t-port{background-image:url('foto-porto-rodovia.png'),linear-gradient(155deg,rgba(30,60,110,.55),rgba(5,9,17,.65))}
-.tile.t-route{background-image:url('foto-rota-noturna.png'),linear-gradient(160deg,#0a1730,#04060d)}
-.tile.t-warehouse{background-image:url('foto-armazem-tablet.png'),linear-gradient(160deg,rgba(20,40,80,.55),rgba(5,9,17,.7))}
-.tile::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(0deg,rgba(3,6,14,.88) 0%,rgba(3,6,14,.35) 45%,rgba(3,6,14,.05) 70%);
-}
-.tile-content{position:absolute;left:0;right:0;bottom:0;padding:28px 30px;z-index:2}
-.tile-content .accent{width:34px;height:3px;background:var(--blue-light);border-radius:2px;margin-bottom:14px}
-.tile-content h3{color:#fff;font-size:clamp(20px,2.4vw,30px);margin-bottom:8px;max-width:420px}
-.tile-content p{color:rgba(255,255,255,.72);font-size:14.5px;max-width:360px}
-.tile.t-port .tile-content h3{max-width:520px}
-
-.value-card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px 20px;transition:transform .3s,border-color .3s;
-}
-.value-card:hover{transform:translateY(-3px);border-color:rgba(111,168,255,.35)}
-.value-icon{
-  width:38px;height:38px;border-radius:10px;
-  background:var(--green-dim);border:1px solid rgba(51,214,166,.3);
-  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
-}
-.value-icon svg{width:18px;height:18px;color:var(--green)}
-.value-card h4{font-size:15.5px;font-weight:600;margin-bottom:6px}
-.value-card p{font-size:13.5px;color:var(--ink-dim)}
-
-/* ===================== STATS ===================== */
-.stats-panel{
-  background:linear-gradient(155deg,var(--panel-2),var(--panel));
-  border:1px solid var(--line);border-radius:var(--radius-lg);
-  padding:56px 40px;
-}
-@media(max-width:640px){.stats-panel{padding:36px 22px}}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
-@media(max-width:860px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:36px}}
-.stat{text-align:left}
-.stat .num{
-  font-family:var(--ff-mono);font-weight:600;font-size:clamp(34px,4.4vw,50px);
-  color:var(--ink);display:flex;align-items:baseline;gap:2px;
-}
-.stat .num .suffix{font-size:.55em;color:var(--blue-light)}
-.stat .cap{color:var(--ink-dim);font-size:14px;margin-top:8px;max-width:200px}
-.stats-note{margin-top:34px;font-size:12.5px;color:var(--ink-faint);font-family:var(--ff-mono);border-top:1px solid var(--line);padding-top:20px}
-
-/* ===================== PROCESS ===================== */
+/* ===================== COMO FUNCIONA ===================== */
 .process-list{display:flex;flex-direction:column}
-.proc-item{
-  display:grid;grid-template-columns:88px 1fr;gap:26px;padding:30px 0;
-  border-top:1px solid var(--line);
-}
+.proc-item{display:grid;grid-template-columns:88px 1fr;gap:26px;padding:28px 0;border-top:1px solid var(--line)}
 .proc-item:last-child{border-bottom:1px solid var(--line)}
 .proc-num{font-family:var(--ff-mono);font-size:15px;color:var(--blue-light);padding-top:4px}
-.proc-body h3{font-size:20px;margin-bottom:8px;font-weight:600}
+.proc-body h3{font-size:19px;margin-bottom:8px;font-weight:600}
 .proc-body p{color:var(--ink-dim);font-size:15px;max-width:560px}
 @media(max-width:560px){.proc-item{grid-template-columns:1fr;gap:8px}}
 
-/* ===================== STACK ===================== */
-.stack-strip{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.stack-pill{
-  font-family:var(--ff-mono);font-size:13px;color:var(--ink-dim);
-  border:1px solid var(--line);padding:9px 16px;border-radius:100px;
-  background:rgba(127,144,176,.04);
-}
+/* ===================== CASES ===================== */
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:860px){.case-grid{grid-template-columns:1fr}}
+.case-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px 26px;transition:border-color .3s,transform .3s;display:flex;flex-direction:column;gap:16px}
+.case-card:hover{border-color:rgba(111,168,255,.4);transform:translateY(-3px)}
+.case-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.case-cat{font-family:var(--ff-mono);font-size:10.5px;letter-spacing:.08em;color:var(--blue-light);background:rgba(47,123,255,.1);border:1px solid rgba(111,168,255,.22);padding:4px 10px;border-radius:6px;text-transform:uppercase}
+.case-card h3{font-size:20px;font-weight:600}
+.case-block{font-size:14px}
+.case-block b{display:block;font-family:var(--ff-mono);font-size:10.5px;letter-spacing:.07em;color:var(--ink-faint);text-transform:uppercase;margin-bottom:5px}
+.case-block p{color:var(--ink-dim);font-size:14.5px}
+.case-tech{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.case-tech span{font-family:var(--ff-mono);font-size:11px;color:var(--ink-dim);border:1px solid var(--line);padding:4px 10px;border-radius:100px;background:rgba(127,144,176,.04)}
+
+/* ===================== DIFERENCIAIS ===================== */
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.diff-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.diff-grid{grid-template-columns:1fr}}
+.diff-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.diff-icon{width:36px;height:36px;border-radius:9px;background:var(--green-dim);border:1px solid rgba(51,214,166,.3);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.diff-icon svg{width:17px;height:17px;color:var(--green)}
+.diff-card p{font-size:15px;color:var(--ink)}
+
+/* ===================== TECNOLOGIAS ===================== */
+.stack-strip{display:flex;flex-wrap:wrap;gap:12px}
+.stack-pill{font-family:var(--ff-mono);font-size:13px;color:var(--ink-dim);border:1px solid var(--line);padding:9px 16px;border-radius:100px;background:rgba(127,144,176,.04)}
+
+/* ===================== SOBRE ===================== */
+.about-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+@media(max-width:860px){.about-wrap{grid-template-columns:1fr;gap:32px}}
+.about-mark{width:64px;height:64px;margin-bottom:20px}
+.about-role{font-family:var(--ff-mono);font-size:13px;color:var(--blue-light);margin-bottom:6px}
+.about-loc{font-size:14px;color:var(--ink-faint)}
+.about-text p{color:var(--ink-dim);font-size:16px;margin-bottom:18px;max-width:600px}
+.about-text p:last-child{margin-bottom:0}
+.about-text strong{color:var(--ink);font-weight:600}
 
 /* ===================== CTA FINAL ===================== */
-.cta-final{
-  position:relative;overflow:hidden;
-  background:linear-gradient(160deg,var(--cta-grad-1),var(--cta-grad-2) 60%);
-  border:1px solid var(--line);border-radius:var(--radius-lg);
-  padding:72px 48px;text-align:center;
-}
+.cta-final{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--cta-grad-1),var(--cta-grad-2) 60%);border:1px solid var(--line);border-radius:var(--radius-lg);padding:72px 48px;text-align:center}
 @media(max-width:640px){.cta-final{padding:48px 24px}}
-.cta-final::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(50% 60% at 50% 0%,var(--hero-glow-1),transparent 70%);
-  pointer-events:none;
-}
-.cta-final h2{font-size:clamp(28px,4.4vw,44px);margin-bottom:16px;position:relative}
-.cta-final p{color:var(--ink-dim);font-size:17px;max-width:520px;margin:0 auto 34px;position:relative}
+.cta-final::before{content:'';position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 0%,var(--hero-glow-1),transparent 70%);pointer-events:none}
+.cta-final h2{font-size:clamp(26px,4.2vw,40px);margin-bottom:16px;position:relative}
+.cta-final p{color:var(--ink-dim);font-size:17px;max-width:540px;margin:0 auto 34px;position:relative}
 .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;margin-bottom:26px}
 .cta-phone{font-family:var(--ff-mono);color:var(--ink-dim);font-size:14px;position:relative}
 .cta-phone a{color:var(--ink);border-bottom:1px dashed var(--line)}
 
 /* ===================== FOOTER ===================== */
 footer{border-top:1px solid var(--line);padding:44px 0 34px}
-.foot-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px}
-.foot-links{display:flex;gap:22px;font-size:13.5px;color:var(--ink-dim)}
+.foot-row{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px}
+.foot-tag{font-family:var(--ff-mono);font-size:11px;color:var(--ink-faint);letter-spacing:.1em;margin-top:6px}
+.foot-links{display:flex;gap:22px;font-size:13.5px;color:var(--ink-dim);flex-wrap:wrap}
 .foot-links a:hover{color:var(--ink)}
 .foot-copy{font-size:12px;color:var(--ink-faint);margin-top:22px;font-family:var(--ff-mono)}
 
 /* ===================== WHATSAPP FLOAT ===================== */
-.wa-float{
-  position:fixed;right:22px;bottom:22px;z-index:90;
-  width:58px;height:58px;border-radius:50%;
-  background:linear-gradient(135deg,#25D366,#1aa350);
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 12px 28px -8px rgba(37,211,102,.55);
-  transition:transform .25s var(--ease);
-}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:90;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#25D366,#1aa350);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -8px rgba(37,211,102,.55);transition:transform .25s var(--ease)}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:28px;height:28px;color:#fff}
 </style>
 </head>
 <body>
+
+<!-- ===================== INTRO CINEMATOGRÁFICA ===================== -->
+<div class="intro" id="intro">
+  <div class="intro-canvas" id="introCanvas">
+    <div class="intro-glow"></div>
+  </div>
+  <div class="intro-content">
+    <svg class="intro-mark" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6FA8FF"/><stop offset="1" stop-color="#1c5ce6"/></linearGradient></defs>
+      <rect width="44" height="44" rx="12" fill="#050911"/>
+      <rect x="2.5" y="2.5" width="39" height="39" rx="10" fill="url(#ig)"/>
+      <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle">DB</text>
+    </svg>
+    <div class="intro-name">DANILO BRAGA</div>
+    <div class="intro-tag">Tecnologia · Dados · Processos</div>
+  </div>
+  <button class="intro-skip" id="introSkip">Pular introdução</button>
+</div>
 
 <!-- ===================== TOP UTILITY BAR ===================== -->
 <div class="topbar">
@@ -507,7 +453,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
         <span class="tb-full">WhatsApp</span>
       </a>
     </div>
-    <div class="topbar-right">SISTEMAS SOB MEDIDA PARA LOGÍSTICA E TRANSPORTE</div>
+    <div class="topbar-right">CONSULTORIA · SISTEMAS · DASHBOARDS · AUTOMAÇÃO</div>
   </div>
 </div>
 
@@ -516,28 +462,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
   <div class="wrap">
     <a href="#top" class="brand">
       <svg class="logo-mark" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#6FA8FF"/>
-            <stop offset="1" stop-color="#1c5ce6"/>
-          </linearGradient>
-        </defs>
+        <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6FA8FF"/><stop offset="1" stop-color="#1c5ce6"/></linearGradient></defs>
         <rect width="44" height="44" rx="12" fill="#050911"/>
         <rect x="2.5" y="2.5" width="39" height="39" rx="10" fill="url(#logoGrad)"/>
-        <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle" letter-spacing="-0.5">DB</text>
+        <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle">DB</text>
         <path d="M9 32 L35 12" stroke="#ffffff" stroke-opacity=".28" stroke-width="3.4" stroke-linecap="round"/>
       </svg>
       <span class="brand-word">
-        <span class="l1">DANILO<span style="font-weight:700;color:var(--ink)"> </span></span>
-        <span class="l2">BRAGA</span>
+        <span class="l1">DANILO BRAGA</span>
+        <span class="l3">TECNOLOGIA · DADOS · PROCESSOS</span>
       </span>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#diagnostico">Diagnóstico</a></li>
+      <li><a href="#top">Início</a></li>
       <li><a href="#solucoes">Soluções</a></li>
-      <li><a href="#operacao">Operação real</a></li>
-      <li><a href="#resultados">Resultados</a></li>
-      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#como-funciona">Processo</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
     <div class="nav-right">
@@ -545,9 +486,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
       </button>
-      <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Vi%20seu%20site%20e%20quero%20entender%20como%20voc%C3%AA%20pode%20me%20ajudar%20com%20tecnologia%20para%20minha%20opera%C3%A7%C3%A3o." target="_blank" rel="noopener">
-        WhatsApp
-      </a>
+      <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Vi%20seu%20site%20e%20quero%20entender%20como%20voc%C3%AA%20pode%20me%20ajudar." target="_blank" rel="noopener">Vamos conversar</a>
     </div>
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
   </div>
@@ -558,273 +497,287 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
   <div class="hero-grid"></div>
   <div class="wrap">
     <div>
-      <div class="eyebrow">Tecnologia para logística e transporte</div>
-      <h1>Sua operação merece mais do que uma <em>planilha</em>.</h1>
-      <p class="lead">Desenvolvo sistemas, dashboards e automações sob medida para transportadoras e operações logísticas que precisam de números confiáveis, visibilidade em tempo real e um processo que não trava.</p>
+      <div class="eyebrow">Tecnologia · Dados · Processos</div>
+      <p class="hero-kicker">Eu não começo pelo código. Começo pelo problema.</p>
+      <h1>Transformo problemas operacionais em soluções digitais.</h1>
+      <p class="lead">Analiso processos, organizo dados e desenvolvo sistemas, dashboards e automações para transformar problemas reais em soluções digitais.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Quero%20entender%20como%20tirar%20minha%20opera%C3%A7%C3%A3o%20da%20planilha." target="_blank" rel="noopener">
+        <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Quero%20conversar%20sobre%20um%20problema%20na%20minha%20opera%C3%A7%C3%A3o." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.2-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.6 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/></svg>
-          Falar no WhatsApp agora
+          Vamos conversar
         </a>
-        <a class="btn btn-ghost" href="#solucoes">Ver soluções ↓</a>
+        <a class="btn btn-ghost" href="#projetos">Ver projetos ↓</a>
       </div>
       <div class="hero-trust">
-        <b>React</b><span class="dot-sep"></span><b>Node.js</b><span class="dot-sep"></span><b>PostgreSQL</b><span class="dot-sep"></span>Sistemas em produção para operações reais
+        <b>Consultoria</b><span class="dot-sep"></span><b>Sistemas</b><span class="dot-sep"></span><b>Dashboards</b><span class="dot-sep"></span><b>Automação</b>
       </div>
     </div>
 
-    <!-- SIGNATURE ELEMENT: Live control-tower dashboard mockup -->
     <div>
-      <div class="dash" id="dash">
-        <div class="dash-top">
-          <div class="dash-top-left"><span class="live-dot"></span> Torre de Controle · ao vivo</div>
-          <div class="dash-top-dots"><span></span><span></span><span></span></div>
+      <div class="tpanel" id="tpanel">
+        <div class="tpanel-top">
+          <div class="tpanel-top-left"><span class="live-dot"></span> <span id="tScenarioTitle">Antes → depois</span></div>
+          <div class="tpanel-top-dots"><span></span><span></span><span></span></div>
         </div>
-        <div class="dash-body">
-          <div class="dash-metrics">
-            <div class="metric-chip"><div class="num" data-count="128">0</div><div class="lbl">Entregas hoje</div></div>
-            <div class="metric-chip"><div class="num" data-count="34">0</div><div class="lbl">Veículos ativos</div></div>
-            <div class="metric-chip"><div class="num up" data-count="99" data-suffix="%">0</div><div class="lbl">Dados em tempo real</div></div>
+        <div class="tpanel-body">
+          <div class="sheet-mock">
+            <div class="sheet-head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+              planilha_operacao.xlsx
+            </div>
+            <table class="sheet-table">
+              <thead><tr><th>Cliente</th><th>Qtd.</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Cliente A</td><td>124</td><td><span class="sheet-tag ok">OK</span></td></tr>
+                <tr><td>Cliente B</td><td>58</td><td><span class="sheet-tag pending">Pendente</span></td></tr>
+                <tr><td>Cliente C</td><td>301</td><td><span class="sheet-tag ok">OK</span></td></tr>
+                <tr><td>Cliente D</td><td>77</td><td><span class="sheet-tag pending">Pendente</span></td></tr>
+              </tbody>
+            </table>
+            <div class="sheet-pivot"><span>Tabela dinâmica</span><b>Total: 560</b></div>
           </div>
-          <div class="dash-chart">
-            <div class="dash-chart-head"><span>Manifestos processados / dia</span><span>7 dias</span></div>
-            <div class="bars">
-              <i style="--h:.45"></i><i style="--h:.6"></i><i style="--h:.5"></i><i style="--h:.72"></i><i style="--h:.66"></i><i style="--h:.85"></i><i style="--h:1"></i>
+
+          <div class="tarrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            <span id="tScenarioArrow">vira um dashboard</span>
+          </div>
+
+          <div class="board-mock">
+            <div class="board-kpis">
+              <div class="board-kpi"><div class="n">560</div><div class="l">Registros</div></div>
+              <div class="board-kpi"><div class="n">4</div><div class="l">Clientes</div></div>
+              <div class="board-kpi"><div class="n">2</div><div class="l">Pendências</div></div>
+            </div>
+            <div class="board-charts">
+              <div class="board-donut">
+                <svg viewBox="0 0 80 80" width="72" height="72">
+                  <circle cx="40" cy="40" r="30" fill="none" stroke="var(--line)" stroke-width="9"/>
+                  <circle class="donut-ring" cx="40" cy="40" r="30" fill="none" stroke="var(--blue-light)" stroke-width="9" stroke-linecap="round" stroke-dasharray="188.4" stroke-dashoffset="188.4" style="--offset:58" transform="rotate(-90 40 40)"/>
+                </svg>
+              </div>
+              <div class="board-bars">
+                <i style="--h:.42"></i><i style="--h:.6"></i><i style="--h:.5"></i><i style="--h:.78"></i><i style="--h:1"></i>
+              </div>
             </div>
           </div>
-          <div class="dash-map">
-            <svg viewBox="0 0 300 96">
-              <path class="route-path" d="M14 70 C 70 20, 140 90, 210 34 S 280 16, 288 12" fill="none" stroke="#6FA8FF" stroke-width="2"/>
-              <circle class="route-node" cx="14" cy="70" r="5"/>
-              <circle class="route-node" cx="210" cy="34" r="5"/>
-              <circle class="route-node" cx="288" cy="12" r="5"/>
-              <circle r="4.5" fill="#2F7BFF">
-                <animateMotion dur="4.5s" repeatCount="indefinite" path="M14 70 C 70 20, 140 90, 210 34 S 280 16, 288 12"/>
-              </circle>
-            </svg>
-          </div>
         </div>
-        <div class="badge-float badge-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Ocorrência resolvida</div>
-        <div class="badge-float badge-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Relatório atualizado</div>
+        <div class="badge-float badge-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Dados organizados</div>
+        <div class="badge-float badge-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Indicador ao vivo</div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- ===================== PAINS ===================== -->
+<!-- ===================== PROBLEMAS ===================== -->
 <section class="section" id="diagnostico">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">Diagnóstico</div>
-      <h2>Se algum desses pontos dói, já sabemos por onde começar</h2>
-      <p>São os mesmos gargalos em quase toda operação de logística e transporte que ainda depende de planilha e sistema legado.</p>
+      <h2>Talvez o problema esteja aqui.</h2>
+      <p>Situações comuns em empresas de diferentes segmentos — do comércio à logística — que ainda dependem de controles manuais.</p>
     </div>
     <div class="pain-grid reveal-stagger">
-      <div class="pain-card">
-        <span class="pain-tag">DOC-01 · PROCESSO</span>
-        <h3>Planilha por todo lado</h3>
-        <p>Cada setor guarda um arquivo diferente. Ninguém confia no mesmo número duas vezes, e toda decisão começa com "deixa eu confirmar".</p>
-      </div>
-      <div class="pain-card">
-        <span class="pain-tag">DOC-02 · NÚMEROS</span>
-        <h3>Números que não fecham</h3>
-        <p>Relatório feito na correria, no fim do mês, montado à mão. Chega tarde, sai com erro e não serve pra decidir nada no momento certo.</p>
-      </div>
-      <div class="pain-card">
-        <span class="pain-tag">DOC-03 · VISIBILIDADE</span>
-        <h3>Zero transparência na operação</h3>
-        <p>Você não sabe onde está o pallet, o manifesto ou a entrega até alguém te ligar perguntando. A informação existe, mas ninguém enxerga.</p>
-      </div>
-      <div class="pain-card">
-        <span class="pain-tag">DOC-04 · SISTEMA</span>
-        <h3>Sistema engessado</h3>
-        <p>O software que você usa não conversa com mais nada, cobra por usuário e qualquer ajuste simples vira um chamado que demora meses.</p>
-      </div>
+      <div class="pain-card"><span class="pain-tag">PROCESSO</span><p>"Minha operação depende de várias planilhas."</p></div>
+      <div class="pain-card"><span class="pain-tag">VISIBILIDADE</span><p>"Não consigo enxergar os indicadores da empresa."</p></div>
+      <div class="pain-card"><span class="pain-tag">PROCESSO</span><p>"Minha equipe perde tempo digitando a mesma informação."</p></div>
+      <div class="pain-card"><span class="pain-tag">SISTEMAS</span><p>"Tenho um sistema, mas ele não acompanha meu processo."</p></div>
+      <div class="pain-card"><span class="pain-tag">DADOS</span><p>"Os dados existem, mas não consigo transformá-los em informação."</p></div>
+      <div class="pain-card"><span class="pain-tag">SISTEMAS</span><p>"Preciso de uma solução, mas não sei exatamente o que desenvolver."</p></div>
     </div>
+    <div class="pain-close reveal">É aí que eu entro.</div>
   </div>
 </section>
 
-<!-- ===================== SOLUTIONS ===================== -->
+<!-- ===================== SERVIÇOS ===================== -->
 <section class="section" id="solucoes" style="background:linear-gradient(180deg,transparent,rgba(127,144,176,.04) 15%,rgba(127,144,176,.04) 85%,transparent)">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">Solução</div>
-      <h2>Tecnologia que resolve cada uma dessas dores</h2>
-      <p>Sistemas, dashboards e automações construídos sob medida para a forma como sua operação realmente funciona — não o contrário.</p>
+      <div class="eyebrow">Serviços</div>
+      <h2>O que eu faço, na prática</h2>
+      <p>Cada projeto começa entendendo a operação — a tecnologia é a ferramenta, não o ponto de partida.</p>
     </div>
     <div class="sol-grid reveal-stagger">
       <div class="sol-card">
+        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3>Consultoria e análise</h3>
+        <p>Entendimento do processo, identificação de gargalos e desenho da solução mais adequada — antes de qualquer linha de código.</p>
+      </div>
+      <div class="sol-card">
         <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 4l-6 8 6 8M16 4l6 8-6 8"/></svg></div>
-        <h3>Sistemas sob medida</h3>
-        <p>Uma plataforma única, construída para o seu fluxo de trabalho — sem depender de planilha nem de sistema genérico.</p>
-        <span class="sol-tag">RES-01 → DOC-01</span>
+        <h3>Sistemas personalizados</h3>
+        <p>Sistemas web desenvolvidos de acordo com a operação real da empresa, não com um modelo genérico de mercado.</p>
       </div>
       <div class="sol-card">
         <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="12" width="4" height="8" rx="1"/><rect x="10" y="7" width="4" height="13" rx="1"/><rect x="17" y="3" width="4" height="17" rx="1"/></svg></div>
-        <h3>Dashboards em tempo real</h3>
-        <p>Números atualizados automaticamente, com histórico, comparação e indicadores que você acompanha de qualquer lugar.</p>
-        <span class="sol-tag">RES-02 → DOC-02</span>
-      </div>
-      <div class="sol-card">
-        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h1l2-6h9l2 6h1M6 17a2 2 0 104 0M14 17a2 2 0 104 0M6 11V7h7l3 4"/></svg></div>
-        <h3>Monitoramento e rastreamento</h3>
-        <p>Acompanhe cada etapa da operação — pallet, manifesto, entrega, motorista — em uma única tela, sem precisar ligar pra ninguém.</p>
-        <span class="sol-tag">RES-03 → DOC-03</span>
-      </div>
-      <div class="sol-card">
-        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17H4v-5M20 7h-5V2M5 12a7 7 0 0113-4M19 12a7 7 0 01-13 4"/></svg></div>
-        <h3>Integrações</h3>
-        <p>Seu sistema conversando com ERP, planilhas, WhatsApp e transportadoras — sem exportar e importar arquivo manualmente.</p>
-        <span class="sol-tag">RES-04 → DOC-04</span>
+        <h3>Dashboards e indicadores</h3>
+        <p>Transformação de dados dispersos em indicadores claros, para acompanhamento contínuo e decisão mais rápida.</p>
       </div>
       <div class="sol-card">
         <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1-1.6 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.9.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.9V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg></div>
         <h3>Automação de processos</h3>
-        <p>O que hoje é manual — bipagem, conferência, geração de relatório — passa a rodar sozinho, sem depender de alguém lembrar de fazer.</p>
-        <span class="sol-tag">RES-05 → DOC-01</span>
+        <p>Redução de tarefas repetitivas e controles manuais — o que hoje depende de alguém lembrar de fazer passa a rodar sozinho.</p>
       </div>
       <div class="sol-card">
-        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg></div>
-        <h3>Análise técnica e KPIs</h3>
-        <p>Indicadores certos, alertas automáticos e leitura clara da operação para decisão rápida — não só um relatório bonito.</p>
-        <span class="sol-tag">RES-06 → DOC-02</span>
+        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H4a1 1 0 00-1 1v4M15 3h5a1 1 0 011 1v4M9 21H4a1 1 0 01-1-1v-4M15 21h5a1 1 0 001-1v-4M8 12h8"/></svg></div>
+        <h3>Integrações e APIs</h3>
+        <p>Conecto sistemas, bancos de dados e outras fontes de informação para manter tudo sincronizado, sem retrabalho manual.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17H4v-5M20 7h-5V2M5 12a7 7 0 0113-4M19 12a7 7 0 01-13 4"/></svg></div>
+        <h3>Implantação e evolução</h3>
+        <p>Do planejamento à implantação, com acompanhamento e melhoria contínua depois que o sistema já está no ar.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== OPERAÇÃO REAL (BENTO PHOTOS) ===================== -->
-<section class="section" id="operacao">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Operação real</div>
-      <h2>Tecnologia que você vê funcionando na prática</h2>
-      <p>Da estrada ao armazém, cada etapa da sua operação com visibilidade e controle de verdade.</p>
-    </div>
-
-    <div class="bento-row1 reveal">
-      <div class="tile t-port">
-        <div class="tile-content">
-          <div class="accent"></div>
-          <h3>Logística inteligente, entregas eficientes</h3>
-          <p>Negócios em movimento, com tecnologia acompanhando cada etapa do transporte.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bento-row2 reveal-stagger">
-      <div class="tile t-route">
-        <div class="tile-content">
-          <div class="accent"></div>
-          <h3>Rota otimizada, resultados reais</h3>
-          <p>Tecnologia para levar sua carga mais longe, com menos custo e mais controle.</p>
-        </div>
-      </div>
-      <div class="tile t-warehouse">
-        <div class="tile-content">
-          <div class="accent"></div>
-          <h3>Gestão que conecta</h3>
-          <p>Informação em tempo real para decisões mais rápidas e operações mais eficientes.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bento-row3 reveal-stagger">
-      <div class="value-card">
-        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h4>Segurança</h4>
-        <p>Sua carga, nosso compromisso.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0111 6c3.9 0 7 3.1 7 7v7"/><path d="M11 20v-9a7 7 0 017-7"/></svg></div>
-        <h4>Sustentabilidade</h4>
-        <p>Rotas eficientes hoje, um futuro melhor amanhã.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></svg></div>
-        <h4>Parceria</h4>
-        <p>Mais que transporte, somos parceiros do seu negócio.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h4>Prazo</h4>
-        <p>Compromisso com o tempo que importa: o seu.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== STATS ===================== -->
-<section class="section" id="resultados">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Impacto</div>
-      <h2>O que a tecnologia certa entrega pra sua operação</h2>
-    </div>
-    <div class="stats-panel reveal">
-      <div class="stats-grid">
-        <div class="stat">
-          <div class="num"><span class="prefix">-</span><span data-count="70">0</span><span class="suffix">%</span></div>
-          <div class="cap">tempo gasto conferindo planilha manualmente</div>
-        </div>
-        <div class="stat">
-          <div class="num"><span data-count="100">0</span><span class="suffix">%</span></div>
-          <div class="cap">dos dados disponíveis em tempo real, sem esperar fechamento</div>
-        </div>
-        <div class="stat">
-          <div class="num"><span data-count="24">0</span><span class="suffix">/7</span></div>
-          <div class="cap">monitoramento contínuo da operação</div>
-        </div>
-        <div class="stat">
-          <div class="num"><span data-count="1">0</span></div>
-          <div class="cap">sistema único, sem retrabalho entre setores</div>
-        </div>
-      </div>
-      <div class="stats-note">* Faixas de referência para sistemas sob medida bem implementados — cada operação tem seu próprio ponto de partida.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== PROCESS ===================== -->
+<!-- ===================== COMO FUNCIONA ===================== -->
 <section class="section" id="como-funciona">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow">Como funciona</div>
       <h2>Do diagnóstico ao sistema no ar</h2>
-      <p>Um processo direto, sem enrolação, pensado pra quem precisa de resultado — não de reunião.</p>
+      <p>Uma jornada direta, sem enrolação, pensada para quem precisa de resultado — não de reunião.</p>
     </div>
     <div class="process-list reveal-stagger">
-      <div class="proc-item">
-        <div class="proc-num">01</div>
-        <div class="proc-body"><h3>Diagnóstico</h3><p>Mapeio sua operação, entendo os gargalos e onde a planilha ou o sistema atual estão travando o crescimento.</p></div>
-      </div>
-      <div class="proc-item">
-        <div class="proc-num">02</div>
-        <div class="proc-body"><h3>Desenvolvimento</h3><p>Construo o sistema sob medida — dashboard, automação ou integração — com stack moderna e pronta pra escalar.</p></div>
-      </div>
-      <div class="proc-item">
-        <div class="proc-num">03</div>
-        <div class="proc-body"><h3>Integração</h3><p>Conecto com o que você já usa: ERP, planilhas de transição, WhatsApp e as ferramentas da sua transportadora.</p></div>
-      </div>
-      <div class="proc-item">
-        <div class="proc-num">04</div>
-        <div class="proc-body"><h3>Suporte contínuo</h3><p>Acompanho, ajusto e evoluo o sistema junto com a sua operação — sem sumir depois da entrega.</p></div>
-      </div>
+      <div class="proc-item"><div class="proc-num">01</div><div class="proc-body"><h3>Entender</h3><p>Converso com você e entendo como o processo funciona hoje, na prática.</p></div></div>
+      <div class="proc-item"><div class="proc-num">02</div><div class="proc-body"><h3>Analisar</h3><p>Identifico gargalos, retrabalho, riscos e oportunidades dentro do processo.</p></div></div>
+      <div class="proc-item"><div class="proc-num">03</div><div class="proc-body"><h3>Planejar</h3><p>Desenho a solução, as funcionalidades e os indicadores necessários.</p></div></div>
+      <div class="proc-item"><div class="proc-num">04</div><div class="proc-body"><h3>Desenvolver</h3><p>Construo o sistema, dashboard ou automação com stack moderna e pronta pra escalar.</p></div></div>
+      <div class="proc-item"><div class="proc-num">05</div><div class="proc-body"><h3>Implantar</h3><p>Coloco a solução em funcionamento dentro da rotina real da operação.</p></div></div>
+      <div class="proc-item"><div class="proc-num">06</div><div class="proc-body"><h3>Evoluir</h3><p>Acompanho, ajusto e evoluo o sistema junto com a necessidade do negócio.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===================== STACK ===================== -->
-<section class="section" style="padding-top:0">
+<!-- ===================== PROJETOS / CASES ===================== -->
+<section class="section" id="projetos" style="background:linear-gradient(180deg,transparent,rgba(127,144,176,.04) 15%,rgba(127,144,176,.04) 85%,transparent)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Projetos</div>
+      <h2>Sistemas que já estão em produção</h2>
+      <p>Uma amostra de projetos reais aplicando a mesma lógica em contextos diferentes: entender o processo, organizar os dados e entregar um sistema, dashboard ou automação que resolve o problema.</p>
+    </div>
+    <div class="case-grid reveal-stagger">
+
+      <div class="case-card">
+        <div class="case-top"><h3>FluxoEasy</h3><span class="case-cat">Produto próprio · SaaS</span></div>
+        <div class="case-block"><b>Problema</b><p>Pequenas e médias empresas gerenciam vendas, estoque, locações e orçamentos em ferramentas soltas e planilhas.</p></div>
+        <div class="case-block"><b>Solução</b><p>Plataforma multi-tenant com PDV, estoque, locações, orçamentos, agenda e calculadora de precificação em um único lugar.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Sistema de templates de etiqueta e impressão com pré-visualização visual, painel de administração multi-cliente, central de mensagens via WhatsApp, relatórios com exportação em Excel e PDF.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Produto próprio, desenvolvido e comercializado por assinatura para empresas brasileiras.</p></div>
+        <div class="case-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>PWA</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><h3>Torre de Controle · Gestão de Frota</h3><span class="case-cat">Sistema interno</span></div>
+        <div class="case-block"><b>Problema</b><p>Operação logística sem visibilidade unificada: monitoramento de motoristas, manutenção, ocupação de pátio e ordens de serviço espalhados em controles paralelos.</p></div>
+        <div class="case-block"><b>Solução</b><p>Plataforma única com controle de acesso por função, monitoramento de GPS em tempo real e módulos de manutenção, jornada de motorista e ocupação — tudo integrado.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Rastreamento por GPS com estratégia de fallback, autenticação por papéis de usuário, tela do motorista para bater ponto e acompanhar a própria jornada, dashboards operacionais separados para escritório e motorista.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Sistema em uso ativo, com múltiplos módulos interligados substituindo controles paralelos.</p></div>
+        <div class="case-tech"><span>React</span><span>Node.js/Express</span><span>PostgreSQL</span><span>Leaflet</span><span>JWT</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><h3>Controle de Pallet Entrada/Saída</h3><span class="case-cat">Logística</span></div>
+        <div class="case-block"><b>Problema</b><p>Controle de pallets sem reconciliação de saldo confiável, com risco de duplicidade em lançamentos sem nota fiscal.</p></div>
+        <div class="case-block"><b>Solução</b><p>Sistema dedicado que reconcilia o saldo por nota de entrada e organiza o fluxo de devolução por cliente.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Cards de resumo por tipo de pallet e por cliente pendente de devolução, autocomplete de cliente padronizado entre as telas de entrada e saída.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Controle unificado do ciclo de pallets, em uso operacional pelo cliente.</p></div>
+        <div class="case-tech"><span>React</span><span>SCSS</span><span>Node/Express</span><span>PostgreSQL</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><h3>KPI de Manifestos</h3><span class="case-cat">Dashboard</span></div>
+        <div class="case-block"><b>Problema</b><p>Falta de indicadores consolidados sobre manifestos por tipo, UF e motorista para leitura rápida da operação.</p></div>
+        <div class="case-block"><b>Solução</b><p>Tela de KPI com filtros multi-seleção, gráficos e ranking dos principais motoristas.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Cards de resumo, gráficos interativos, exportação em PDF e Excel, detalhamento diário ao clicar em um motorista.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Leitura rápida do desempenho operacional sem depender de relatório montado manualmente.</p></div>
+        <div class="case-tech"><span>React</span><span>Chart.js</span><span>jsPDF/XLSX</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><h3>Painel de Ocupação Operacional</h3><span class="case-cat">Dashboard</span></div>
+        <div class="case-block"><b>Problema</b><p>Acompanhar a ocupação de posições do pátio dependia de planilha, sem uma visão de apresentação clara para reuniões.</p></div>
+        <div class="case-block"><b>Solução</b><p>Dashboard com gráfico de ocupação e exportação em PDF, a partir da planilha operacional já usada pela equipe.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Métricas de posições totais, ocupadas, vazias e ocorrências, exportação otimizada em página única, formato paisagem.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Apresentação executiva pronta para reunião, direto a partir dos dados operacionais existentes.</p></div>
+        <div class="case-tech"><span>HTML/CSS/JS</span><span>Chart.js</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><h3>Controle Coletor</h3><span class="case-cat">Automação</span></div>
+        <div class="case-block"><b>Problema</b><p>Conferência de pedidos e produtos sem controle digital de divergência entre o esperado e o bipado.</p></div>
+        <div class="case-block"><b>Solução</b><p>Sistema com bipagem, cadastro de produtos e pedidos, exigindo justificativa sempre que há divergência de quantidade.</p></div>
+        <div class="case-block"><b>Funcionalidades</b><p>Autenticação com tema claro/escuro, cadastro de produtos via painel lateral, relatórios de conferência.</p></div>
+        <div class="case-block"><b>Resultado</b><p>Rastreabilidade das divergências no processo de conferência.</p></div>
+        <div class="case-tech"><span>React</span><span>Node/Express</span><span>PostgreSQL</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIFERENCIAIS ===================== -->
+<section class="section" id="diferenciais">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Diferenciais</div>
+      <h2>Por que trabalhar comigo</h2>
+    </div>
+    <div class="diff-grid reveal-stagger">
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><p>Entendo a operação antes de desenvolver.</p></div>
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></div><p>Não entrego apenas código — entrego uma solução para o problema real.</p></div>
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><p>Desenvolvo soluções sob medida, não pacotes genéricos.</p></div>
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h8M8 8h8M8 16h5"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></div><p>Falo a linguagem do negócio e da tecnologia.</p></div>
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17H4v-5M20 7h-5V2M5 12a7 7 0 0113-4M19 12a7 7 0 01-13 4"/></svg></div><p>Acompanho o projeto do diagnóstico à implantação.</p></div>
+      <div class="diff-card"><div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h1l2-6h9l2 6h1M6 17a2 2 0 104 0M14 17a2 2 0 104 0M6 11V7h7l3 4"/></svg></div><p>Experiência prática com operações e logística.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECNOLOGIAS ===================== -->
+<section class="section" style="padding-top:0" id="tecnologias">
   <div class="wrap reveal">
     <div class="eyebrow">Stack</div>
-    <p style="color:var(--ink-dim);max-width:560px;margin-bottom:22px">Mesma stack usada em sistemas reais de gestão de frota, controle de pallet, manifesto e KPI para clientes de logística.</p>
+    <p style="color:var(--ink-dim);max-width:560px;margin-bottom:22px">Tecnologias que fazem parte da minha experiência prática, usadas em sistemas reais em produção.</p>
     <div class="stack-strip">
       <span class="stack-pill">React</span>
-      <span class="stack-pill">Node.js / Express</span>
+      <span class="stack-pill">Node.js</span>
+      <span class="stack-pill">Express</span>
       <span class="stack-pill">PostgreSQL</span>
-      <span class="stack-pill">Dashboards em tempo real</span>
-      <span class="stack-pill">Vercel · Render</span>
+      <span class="stack-pill">APIs REST</span>
+      <span class="stack-pill">JavaScript</span>
+      <span class="stack-pill">SCSS / CSS</span>
+      <span class="stack-pill">Excel</span>
+      <span class="stack-pill">Power BI</span>
+      <span class="stack-pill">Looker Studio</span>
+      <span class="stack-pill">Vercel</span>
+      <span class="stack-pill">Render</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE MIM ===================== -->
+<section class="section" id="sobre" style="background:linear-gradient(180deg,transparent,rgba(127,144,176,.04) 15%,rgba(127,144,176,.04) 85%,transparent)">
+  <div class="wrap">
+    <div class="about-wrap reveal">
+      <div>
+        <svg class="about-mark" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="12" fill="#050911"/>
+          <rect x="2.5" y="2.5" width="39" height="39" rx="10" fill="url(#logoGrad)"/>
+          <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle">DB</text>
+        </svg>
+        <div class="eyebrow">Sobre</div>
+        <h2 style="font-size:clamp(24px,3.4vw,34px);margin-bottom:10px">Por trás da solução</h2>
+        <div class="about-role">Desenvolvedor full-stack</div>
+        <div class="about-loc">Rio de Janeiro, Brasil</div>
+      </div>
+      <div class="about-text">
+        <p><strong>Não sou apenas desenvolvedor.</strong> Minha principal vantagem é entender o problema antes de decidir qual tecnologia utilizar — e só depois disso partir para o código.</p>
+        <p>Desenvolvo e mantenho sistemas web, dashboards e automações para negócios de diferentes segmentos, trabalhando com <strong>React, Node.js/Express e PostgreSQL</strong>. Também mantenho um produto próprio, o <strong>FluxoEasy</strong>, uma plataforma de gestão para pequenas e médias empresas.</p>
+        <p style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)"><strong>Experiência prática em operações.</strong> Minha vivência com logística, transporte e processos operacionais me permite entender não apenas a tecnologia, mas também o ambiente real em que ela precisa funcionar — o que ajuda em qualquer negócio que dependa de processo, e não só nesse setor.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -833,12 +786,12 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
 <section class="section" id="contato">
   <div class="wrap">
     <div class="cta-final reveal">
-      <h2>Vamos tirar sua operação da planilha?</h2>
-      <p>Me conta o que está travando sua operação hoje — sistema, planilha ou falta de visão sobre os números — e eu te mostro como resolver.</p>
+      <h2>Tem um problema que precisa virar solução?</h2>
+      <p>Me conte o que está travando seu processo hoje. Podemos avaliar juntos se a solução é um sistema, um dashboard, uma automação ou simplesmente uma melhor organização dos dados.</p>
       <div class="cta-actions">
-        <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Quero%20falar%20sobre%20um%20sistema%20para%20minha%20opera%C3%A7%C3%A3o%20de%20log%C3%ADstica." target="_blank" rel="noopener">
+        <a class="btn btn-primary" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!%20Tenho%20um%20problema%20que%20preciso%20resolver%20na%20minha%20empresa." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.2-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.6 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/></svg>
-          Chamar no WhatsApp
+          Vamos conversar
         </a>
         <a class="btn btn-ghost" href="tel:+5521971536909">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .7 2.9a2 2 0 01-.4 2.1L8 10.1a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.4 1.9.6 2.9.7a2 2 0 011.6 2z"/></svg>
@@ -854,42 +807,74 @@ footer{border-top:1px solid var(--line);padding:44px 0 34px}
 <footer>
   <div class="wrap">
     <div class="foot-row">
-      <div class="brand">
-        <svg class="logo-mark" style="width:34px;height:34px" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-          <rect width="44" height="44" rx="12" fill="#050911"/>
-          <rect x="2.5" y="2.5" width="39" height="39" rx="10" fill="url(#logoGrad)"/>
-          <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle" letter-spacing="-0.5">DB</text>
-          <path d="M9 32 L35 12" stroke="#ffffff" stroke-opacity=".28" stroke-width="3.4" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-word">
-          <span class="l1">DANILO BRAGA</span>
-          <span class="l3">DESENVOLVIMENTO SOB DEMANDA</span>
-        </span>
+      <div>
+        <div class="brand">
+          <svg class="logo-mark" style="width:34px;height:34px" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="12" fill="#050911"/>
+            <rect x="2.5" y="2.5" width="39" height="39" rx="10" fill="url(#logoGrad)"/>
+            <text x="22" y="29" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="17" fill="#fff" text-anchor="middle">DB</text>
+          </svg>
+          <span class="brand-word"><span class="l1">DANILO BRAGA</span></span>
+        </div>
+        <div class="foot-tag">TECNOLOGIA · DADOS · PROCESSOS</div>
       </div>
       <ul class="foot-links">
-        <li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#top">Início</a></li>
         <li><a href="#solucoes">Soluções</a></li>
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="https://wa.me/5521971536909" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="#como-funciona">Processo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="https://wa.me/5521971536909" target="_blank" rel="noopener">Contato</a></li>
       </ul>
     </div>
-    <div class="foot-copy">© 2026 Danilo Braga — Sistemas, automação e integrações para logística e transporte.</div>
+    <div class="foot-copy">© 2026 Danilo Braga — Consultoria, sistemas, dashboards e automação para transformar processos em soluções digitais.</div>
   </div>
 </footer>
 
-<!-- ===================== WHATSAPP FLOAT ===================== -->
 <a class="wa-float" href="https://wa.me/5521971536909?text=Ol%C3%A1%2C%20Danilo!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.9-1.7-2.2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.2-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.7 14.6 3.2 13 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2z"/></svg>
 </a>
 
 <script>
-// ===================== THEME (dark/light, no persistence) =====================
+// ===================== INTRO =====================
+(function(){
+  var intro = document.getElementById('intro');
+  var skip = document.getElementById('introSkip');
+  var canvas = document.getElementById('introCanvas');
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var already = sessionStorage.getItem('db_intro_seen');
+
+  function closeIntro(){
+    intro.classList.add('hide');
+    document.body.classList.remove('locked');
+    sessionStorage.setItem('db_intro_seen','1');
+  }
+
+  if (reduced || already) {
+    intro.classList.add('hide');
+  } else {
+    document.body.classList.add('locked');
+    // partículas
+    for (var i=0;i<26;i++){
+      var p = document.createElement('span');
+      p.className = 'intro-particle';
+      var size = 2 + Math.random()*3;
+      p.style.width = size+'px';
+      p.style.height = size+'px';
+      p.style.left = (Math.random()*100)+'%';
+      p.style.top = (55 + Math.random()*30)+'%';
+      p.style.animationDelay = (Math.random()*2.6)+'s';
+      p.style.animationDuration = (2.6 + Math.random()*1.6)+'s';
+      canvas.appendChild(p);
+    }
+    var t = setTimeout(closeIntro, 6200);
+    skip.addEventListener('click', function(){ clearTimeout(t); closeIntro(); });
+  }
+})();
+
+// ===================== THEME (inicia claro, alternável, sem persistência) =====================
 const html = document.documentElement;
 const themeToggle = document.getElementById('themeToggle');
-
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-  html.setAttribute('data-theme', 'light');
-}
 themeToggle.addEventListener('click', () => {
   const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
   html.setAttribute('data-theme', next);
@@ -899,11 +884,9 @@ themeToggle.addEventListener('click', () => {
 const nav = document.getElementById('nav');
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('navLinks');
-
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 30);
 }, {passive:true});
-
 burger.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   burger.classList.toggle('open', open);
@@ -926,36 +909,48 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
 revealEls.forEach(el => revealObserver.observe(el));
 
-// ===================== COUNT-UP NUMBERS ON SCROLL =====================
-function animateCount(el){
-  const target = parseFloat(el.dataset.count);
-  const suffix = el.dataset.suffix || '';
-  const duration = 1400;
-  const start = performance.now();
-  function tick(now){
-    const p = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - p, 3);
-    const val = Math.round(target * eased);
-    el.textContent = val + suffix;
-    if (p < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
+// ===================== TRANSFORM PANEL CHART PLAY =====================
+const tpanel = document.getElementById('tpanel');
+if (tpanel) {
+  const tpanelObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('play');
+        tpanelObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.35});
+  tpanelObserver.observe(tpanel);
 }
-const countEls = document.querySelectorAll('[data-count]');
-const countObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCount(entry.target);
-      countObserver.unobserve(entry.target);
-    }
-  });
-}, {threshold:0.4});
-countEls.forEach(el => countObserver.observe(el));
 
-// ===================== HERO DASHBOARD BAR CHART PLAY =====================
-window.addEventListener('load', () => {
-  setTimeout(() => document.getElementById('dash').classList.add('play'), 300);
-});
+// ===================== ANTES → DEPOIS: alternância de cenários =====================
+(function(){
+  const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const titleEl = document.getElementById('tScenarioTitle');
+  const arrowEl = document.getElementById('tScenarioArrow');
+  if (!titleEl || !arrowEl || reducedMotion) return;
+
+  const scenarios = [
+    { title: 'Planilha → Dashboard', arrow: 'vira um dashboard' },
+    { title: 'Processo manual → Sistema', arrow: 'vira um sistema' },
+    { title: 'Dados espalhados → Informação', arrow: 'vira informação' },
+    { title: 'Tarefa repetitiva → Automação', arrow: 'vira automação' }
+  ];
+  let idx = 0;
+
+  function swapText(el, text){
+    el.style.transition = 'opacity .35s ease';
+    el.style.opacity = 0;
+    setTimeout(() => { el.textContent = text; el.style.opacity = 1; }, 350);
+  }
+
+  setInterval(() => {
+    idx = (idx + 1) % scenarios.length;
+    swapText(titleEl, scenarios[idx].title);
+    swapText(arrowEl, scenarios[idx].arrow);
+  }, 4200);
+})();
+
 </script>
 </body>
 </html>
